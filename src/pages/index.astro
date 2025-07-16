@@ -1,5 +1,7 @@
 ---
-
+import Avatar from "@/components/ui/avatar.astro";
+import LinkButton from "@/components/ui/link-button.astro";
+import "@/styles/globals.css";
 ---
 
 <html lang="en">
@@ -8,9 +10,54 @@
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
+		<title>Фотокерамика в Калининграде</title>
 	</head>
-	<body>
-		<h1>Astro</h1>
+	<body class="bg-gray-100 min-h-screen">
+		<div class="w-full max-w-md mx-auto px-4 py-8">
+			<!-- Header Section -->
+			<div class="text-center mb-8">
+				<Avatar
+					src="/rafeev.jpg"
+					alt="Rafeev"
+					size="xl"
+					class="mx-auto mb-4"
+				/>
+				<h1 class="text-xl font-bold text-gray-900 mb-2">
+					Фотокерамика
+				</h1>
+				<p class="text-sm text-gray-600">
+					Калининград, проспект Победы 3
+				</p>
+			</div>
+
+			<!-- Social Links -->
+			<div class="space-y-4">
+				<LinkButton href="https://t.me/+LiPxPfbhOO9jY2Iy">
+					Заказать керамику
+				</LinkButton>
+
+				<LinkButton href="tel:+79062335351">+7-9062-33-53-51</LinkButton
+				>
+
+				<LinkButton href="https://fotokeramika.ru/"
+					>Примеры работ</LinkButton
+				>
+
+				<LinkButton href="https://t.me/fotokeramika_ru"
+					>Новости в Телеграме</LinkButton
+				>
+
+				<LinkButton href="mailto:mail@fotokeramika.ru"
+					>Емейл</LinkButton
+				>
+
+
+				<LinkButton href="https://yandex.com/maps/-/CHDLIKZy"
+					>На Яндекс Картах 4.2 ⭐️</LinkButton
+				>
+
+				
+			</div>
+		</div>
 	</body>
 </html>
