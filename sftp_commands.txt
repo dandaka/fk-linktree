@@ -1,0 +1,3 @@
+cd card.fotokeramika.ru
+put -r dist/*
+quit

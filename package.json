@@ -6,7 +6,8 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "upload": "pnpm build && cp .htaccess dist/ && scp -r dist/* fotokeramika@pdx1-shared-a1-11.dreamhost.com:card.fotokeramika.ru/ && scp dist/.htaccess fotokeramika@pdx1-shared-a1-11.dreamhost.com:card.fotokeramika.ru/"
   },
   "dependencies": {
     "@astrojs/tailwind": "^6.0.2",
